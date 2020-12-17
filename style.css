@@ -1,0 +1,134 @@
+html {
+  font-size: 62.5%;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro",
+    "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体",
+    "メイリオ", sans-serif;
+}
+body {
+  font-size: 1.6rem;
+  line-height: 2;
+}
+header {
+  height: 100px;
+  width: 100%;
+  padding: 15px 0;
+  margin-bottom: 5%;
+  background-color: #337079;
+  color: white;
+}
+#topArea {
+  text-align: center;
+}
+#mainArea {
+  margin: 0% 15%;
+}
+p {
+  padding: 0% 5%;
+}
+#n {
+  font-size: 70%;
+  text-decoration: line-through;
+}
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #337079;
+  color: white;
+  text-align: center;
+  margin-top: 5%;
+}
+h1 {
+  font-size: 36px;
+  font-size: calc(2.4rem + ((1vw - 0.64rem) * 2.1429));
+  line-height: 1.3;
+  position: relative;
+}
+h2 {
+  font-size: 24px;
+  font-size: calc(2rem + ((1vw - 0.64rem) * 0.7143));
+  line-height: 1.3;
+  position: relative;
+  line-height: 1.4;
+  padding: 0.25em 1em;
+  display: inline-block;
+  top: 0;
+  position: relative;
+  line-height: 1.4;
+  padding: 0.25em 1em;
+  display: inline-block;
+  top: 0;
+  margin-top: 7%;
+}
+h2:before,
+h2:after {
+  position: absolute;
+  top: 0;
+  content: "";
+  width: 8px;
+  height: 100%;
+  display: inline-block;
+}
+h2:before {
+  border-left: solid 1px black;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+  left: 0;
+}
+h2:after {
+  content: "";
+  border-top: solid 1px black;
+  border-right: solid 1px black;
+  border-bottom: solid 1px black;
+  right: 0;
+}
+.img_tr {
+  margin: 5% 10%;
+}
+.hidden_box {
+  text-align: center;
+  margin: 2em 0;
+  padding: 0;
+}
+.hidden_box label {
+  padding: 15px;
+  font-weight: bold;
+  border: solid 2px black;
+  cursor: pointer;
+}
+.hidden_box label:hover {
+  background: #efefef;
+}
+.hidden_box input {
+  display: none;
+}
+.hidden_box .hidden_show {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.8s;
+}
+.hidden_box input:checked ~ .hidden_show {
+  padding: 10px 0;
+  height: auto;
+  opacity: 1;
+}
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 3.6rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  body {
+    line-height: 2;
+  }
+  h1 {
+    font-size: 2.4rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
